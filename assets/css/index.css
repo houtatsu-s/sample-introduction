@@ -1,4 +1,191 @@
 @charset "utf-8";
+
+/* ーーーーーーーーーー共通部分ここからーーーーーーーーーー */
+.inner {
+  width: 1920px;
+}
+/* ーーーーーーーーーー共通部分ここまでーーーーーーーーーー */
+
+/* ーーーーーーーーーーメイン部分ここからーーーーーーーーーー */
+.container {
+  width: 1920px;
+  position: relative;
+}
+.section {
+  width: 100%;
+  padding: 64px 64px 48px;
+}
+.section-name {
+  font-size: 192px;
+  letter-spacing: -10px;
+  margin: 0 0 32px;
+  line-height: 100%;
+}
+.section-kana {
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -1px;
+  opacity: .7;
+}
+.image {
+  width: 100%;
+  height: 1000px;
+}
+.o-menu {
+  position: absolute;
+  top: 48px;
+  right: 48px;
+  width: 112px;
+  height: 56px;
+  padding: 13px 20px;
+  background: #1E1E21;
+  border-radius: 50px;
+  cursor: pointer;
+  .text {
+    font-size: 24px;
+    text-align: center;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+  }
+}
+.open {
+  color: #F5F3EF;
+}
+.close {
+  color: #1E1E21;
+}
+
+.menu-link {
+  display: none;
+}
+.menu-link.is-active {
+  display: block;
+  width: 1920px;
+  height: 1200px;
+  background: #1E1E21;
+  padding: 128px;
+  position: relative;
+}
+.c-menu {
+  position: absolute;
+  top: 64px;
+  right: 64px;
+  width: 112px;
+  height: 56px;
+  padding: 13px 20px;
+  background: #F5F3EF;
+  border-radius: 50px;
+  cursor: pointer;
+  .text {
+    font-size: 24px;
+    text-align: center;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+  }
+}
+.menu-page {
+  width: 1664px;
+  position: absolute;
+  top: 320px;
+  left: 128px;
+  height: calc((128px * 4) + (16px * 3));
+  display: flex;
+  flex-direction: column;
+  a {
+    height: 128px;
+    display: flex;
+    justify-content: center;
+  }
+  a:nth-child(1),
+  a:nth-child(2),
+  a:nth-child(3) {
+    margin: 0 0 16px;
+  }
+  .image {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 0 16px 0 0;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 35px;
+      height: 35px;
+    }
+  }
+  .page-name {
+    font-size: 128px;
+    line-height: 100%;
+    letter-spacing: -4px;
+    color: #F5F3EF;
+  }
+}
+.container2 {
+  width: 1920px;
+  height: calc(552px + 634px + 2px);
+  padding: 64px;
+}
+.content1 {
+  width: 100%;
+  height: 488px;
+  padding: 0 0 64px;
+  border-bottom: 1px solid #1E1E21;
+  display: flex;
+}
+.priority {
+  width: calc(100% - 130px - 478px);
+  margin: 0 65px 0 0;
+  font-size: 96px;
+  line-height: 110%;
+  letter-spacing: -4px;
+  color: #1E1E21;
+}
+.line {
+  border: 1px solid #1E1E21;
+}
+.me {
+  position: relative;
+  width: 478px;
+  margin: 0 0 0 65px;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: -1px;
+  color: #1E1E21;
+}
+.sns-list {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 176px;
+  height: 48px;
+  justify-content: space-between;
+}
+.sns-link {
+  width: 48px;
+  height: 48px;
+  background: #1E1E21;
+  border-radius: 50px;
+  padding: 6px 12px;
+  position: relative;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+  }
+}
+.content2 {
+  height: 506px;
+  padding: 64px 0 0;
+}
+
+/* ーーーーーーーーーーメイン部分ここまでーーーーーーーーーー */
+
 /* ーーーーーーーーーーフッター部分ここからーーーーーーーーーー */
 .footer {
   width: 1920px;
