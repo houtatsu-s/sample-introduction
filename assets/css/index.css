@@ -1,1 +1,112 @@
 @charset "utf-8";
+/* ーーーーーーーーーーフッター部分ここからーーーーーーーーーー */
+.footer {
+  width: 1920px;
+  height: 750px;
+  color: #F5F3EF;
+  background: #1E1E21;
+  padding: 157px 64px 138px;
+}
+.f-inner {
+  position: relative;
+  width: 100%;
+  height: 286px;
+  text-align: center;
+}
+.f-name {
+  width: 100%;
+  margin: 0 0 32px;
+  font-size: 192px;
+  line-height: 100%;
+  letter-spacing: -10px;
+}
+.f-button {
+  position: absolute;
+  bottom: 0;
+  left: 827px;
+  background: #F5F3EF;
+  border-radius: 50px;
+  padding: 20px 30px;
+  width: 138px;
+  a {
+    font-size: 20px;
+    line-height: 110%;
+    color: #1E1E21;
+  }
+}
+.f-box {
+  height: calc(750px - (157px + 138px + 286px));
+  position: relative;
+}
+.f-list {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 569px;
+  height: 29px;
+  display: flex;
+  justify-content: space-between;
+}
+.f-l-item {
+  width: 111px;
+  height: 100%;
+  a {
+    font-size: 24px;
+    line-height: 120%;
+    color: #F5F3EF;
+  }
+}
+/* ーーーーーーーーーーフッター部分ここまでーーーーーーーーーー */
+
+/* ーーーーーーーーーーSPフッター部分ここからーーーーーーーーーー */
+@media screen and (max-width:400px) {
+  .footer {
+    width: 100%;
+    height: 454px;
+    padding: 53px 50px;
+  }
+  .f-inner {
+    height: calc(454px - (53px + 53px + 239px));
+  }
+  .f-name {
+    font-size: 58px;
+    letter-spacing: -3px;
+    margin: 0 0 17px;
+  }
+  .f-button {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 11px 16px;
+    width: 77px;
+    height: 34px;
+    a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 11px;
+      line-height: 110%;
+    }
+  }
+  .f-box {
+    height: 239px;
+  }
+  .f-list {
+    display: flex;
+    flex-direction: column;
+    width: 92px;
+    height: 182px;
+  }
+  .f-l-item {
+    text-align: center;
+    width: 100%;
+    height: 24px;
+    a {
+      font-size: 20px;
+    }
+  }
+}
+/* ーーーーーーーーーーSPフッター部分ここまでーーーーーーーーーー */
