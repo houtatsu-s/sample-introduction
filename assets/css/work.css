@@ -57,6 +57,9 @@
   line-height: 160%;
   opacity: .7;
   margin: 0 0 14px 0;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
 }
 .btn {
   display: flex;
