@@ -11,10 +11,33 @@
   <!-- cssファイル読み込み -->
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/contact.css">
+  <link rel="stylesheet" href="/assets/css/menu.css">
   <title>課題１</title>
 </head>
 <body>
-
+  <div class="container">
+    <div class="contena">
+      <div class="image">
+        <img src="./assets/image/contact.png" alt="contactの画像">
+      </div>
+      <div class="inquiry">
+        <div class="inquiry-warp">
+          <div class="inquiry-title">お問い合せ</div>
+          <div class="inquiry-text">Let’s get<br> in touch</div>
+        </div>
+        <form action="http://127.0.0.1:5500/index.html" method="GET">
+          <input type="text" placeholder="Name" autocomplete="off">
+          <input type="text" placeholder="Email" autocomplete="off">
+          <textarea placeholder="Message" autocomplete="off"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- メニューボタン -->
+    <div class="o-menu">
+      <p class="text open">menu</p>
+    </div>
+  </div>
   <!-- フッターここから -->
   <footer class="footer">
     <div class="f-inner">
