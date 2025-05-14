@@ -43,7 +43,7 @@
 .menu-link {
   position: fixed;
   top: 0;
-  left: -100%;
+  left: -300%;
 }
 .menu-link.is-active {
   position: fixed;
@@ -89,3 +89,101 @@
     color: #F5F3EF;
   }
 }
+
+/* ーーーーーーーーーーSPメイン部分ここからーーーーーーーーーー */
+@media screen and (max-width:400px) {
+  .o-menu {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    width: 92px;
+    height: 46px;
+    padding: 13px 19px;
+    background: #1E1E21;
+    border-radius: 41px;
+    cursor: pointer;
+    .text {
+      font-size: 19px;
+      text-align: center;
+      line-height: 100%;
+      letter-spacing: -0.4px;
+    }
+  }
+  .open {
+    color: #F5F3EF;
+  }
+  .close {
+    color: #1E1E21;
+  }
+  .c-menu {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    width: 92px;
+    height: 46px;
+    padding: 13px 19px;
+    background: #F5F3EF;
+    border-radius: 41px;
+    cursor: pointer;
+    .text {
+      font-size: 19px;
+      text-align: center;
+      line-height: 100%;
+      letter-spacing: -0.4px;
+    }
+  }
+  .menu-link {
+    position: fixed;
+    top: 0;
+    left: -300%;
+  }
+  .menu-link.is-active {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    background-color: #1E1E21;
+    padding: 0px;
+    height: 100vh;
+    z-index: 100;
+  }
+  .menu-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    a {
+      width: auto;
+      height: 53px;
+      display: flex;
+      justify-content: center;
+    }
+    a:nth-child(1) {
+      margin: 0px 0 7px;
+    }
+    a:nth-child(2),
+    a:nth-child(3) {
+      margin: 0 0 7px;
+    }
+    .image {
+      width: 29px;
+      height: 29px;
+      margin: 0 6px 0 0;
+      position: relative;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 15px;
+        height: 15px;
+      }
+    }
+    .page-name {
+      font-size: 53px;
+      line-height: 100%;
+      letter-spacing: -1.6px;
+      color: #F5F3EF;
+    }
+  }
+}
+/* ーーーーーーーーーーSPメイン部分ここまでーーーーーーーーーー */
