@@ -58,8 +58,10 @@
   opacity: .7;
   margin: 0 0 14px 0;
   overflow: hidden;
-  -webkit-line-clamp: 2;
-  text-overflow: ellipsis;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 .btn {
   display: flex;
@@ -103,7 +105,114 @@
   }
 }
 /* ーーーーーーーーーーメイン部分ここまでーーーーーーーーーー */
-
+/* ーーーーーーーーーーSPメイン部分ここからーーーーーーーーーー */
+@media screen and (max-width:400px) {
+  .container {
+    position: relative;
+    width: 100%;
+  }
+  .container-warp {
+    width: 100%;
+    padding: 57px 23px;
+  }
+  .container-warp-title {
+    width: 100%;
+    font-size: 80px;
+    line-height: 110%;
+    letter-spacing: -4px;
+    margin: 0 0 10px;
+  }
+  .container-warp-text {
+    font-size: 23px;
+    line-height: 120%;
+    letter-spacing: -.7px;
+  }
+  .content {
+    width: 100%;
+    height: auto;
+    a {
+      width: 100%;
+      height: auto;
+    }
+    .image {
+      height: auto;
+      img {
+        height: 100%;
+      }
+    }
+  }
+  .warp {
+    width: 100%;
+    padding: 21px 20px 0;
+    display: block;
+    color: #1E1E21;
+    margin: 0 0 85px;
+  }
+  .warp-title {
+    display: inline-block;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: -1px;
+    margin: 0 0 6px;
+  }
+  .warp-box {
+    width: 100%;
+    margin: 0;
+  }
+  .warp-box-text {
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    opacity: .7;
+    margin: 0 0 22px 0;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+  .btn {
+    display: flex;
+  }
+  .btn-w {
+    width: 117px;
+    height: 36px;
+    background: #1E1E21;
+    border-radius: 50px;
+    position: relative;
+    padding: 9px 15px;
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 15px;
+      line-height: 110%;
+      color: #F5F3EF;
+    }
+  }
+  .btn-w:nth-child(1) {
+    margin: 0 8px 0 0;
+  }
+  .btn-b {
+    width: 117px;
+    height: 36px;
+    background: #1E1E21;
+    border-radius: 50px;
+    position: relative;
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 15px;
+      line-height: 110%;
+      color: #F5F3EF;
+    }
+  }
+}
+/* ーーーーーーーーーーSPメイン部分ここまでーーーーーーーーーー */
 /* ーーーーーーーーーーフッター部分ここからーーーーーーーーーー */
 .footer {
   width: 1920px;

@@ -165,8 +165,10 @@
   opacity: .7;
   letter-spacing: -1px;
   overflow: hidden;
-  -webkit-line-clamp: 3;
+  display: -webkit-box;
   text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
 .design-line {
   border: 1px solid #1E1E21;
@@ -181,7 +183,7 @@
 }
 /* ーーーーーーーーーーメイン部分ここまでーーーーーーーーーー */
 
-/* ーーーーーーーーーーSPメイン部分ここまでーーーーーーーーーー */
+/* ーーーーーーーーーーSPメイン部分ここからーーーーーーーーーー */
 @media screen and (max-width:400px) {
   .container {
     width: 100%;
@@ -339,8 +341,10 @@
     opacity: .7;
     letter-spacing: 0px;
     overflow: hidden;
-    -webkit-line-clamp: 3;
+    display: -webkit-box;
     text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
   }
   .design-line {
     border: 1px solid #1E1E21;
