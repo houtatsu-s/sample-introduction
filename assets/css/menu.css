@@ -10,12 +10,12 @@
   background: #1E1E21;
   border-radius: 50px;
   cursor: pointer;
-  .text {
-    font-size: 24px;
-    text-align: center;
-    line-height: 100%;
-    letter-spacing: -0.5px;
-  }
+}
+.o-menu .text {
+  font-size: 24px;
+  text-align: center;
+  line-height: 100%;
+  letter-spacing: -0.5px;
 }
 .open {
   color: #F5F3EF;
@@ -33,12 +33,12 @@
   background: #F5F3EF;
   border-radius: 50px;
   cursor: pointer;
-  .text {
-    font-size: 24px;
-    text-align: center;
-    line-height: 100%;
-    letter-spacing: -0.5px;
-  }
+}
+.c-menu .text {
+  font-size: 24px;
+  text-align: center;
+  line-height: 100%;
+  letter-spacing: -0.5px;
 }
 .menu-link {
   position: fixed;
@@ -54,40 +54,38 @@
   height: 100vh;
   z-index: 100;
 }
-.menu-page {
-  a {
-    width: auto;
-    height: 128px;
-    display: flex;
-    justify-content: center;
-  }
-  a:nth-child(1) {
-    margin: 96px 0 16px;
-  }
-  a:nth-child(2),
-  a:nth-child(3) {
-    margin: 0 0 16px;
-  }
-  .image {
-    width: 70px;
-    height: 70px;
-    margin: 0 16px 0 0;
-    position: relative;
-    img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 35px;
-      height: 35px;
-    }
-  }
-  .page-name {
-    font-size: 128px;
-    line-height: 100%;
-    letter-spacing: -4px;
-    color: #F5F3EF;
-  }
+.menu-page a {
+  width: auto;
+  height: 128px;
+  display: flex;
+  justify-content: center;
+}
+.menu-page a:nth-child(1) {
+  margin: 96px 0 16px;
+}
+.menu-page a:nth-child(2),
+.menu-page a:nth-child(3) {
+  margin: 0 0 16px;
+}
+.menu-page .image {
+  width: 70px;
+  height: 70px;
+  margin: 0 16px 0 0;
+  position: relative;
+}
+.menu-page .image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35px;
+  height: 35px;
+}
+.menu-page .page-name {
+  font-size: 128px;
+  line-height: 100%;
+  letter-spacing: -4px;
+  color: #F5F3EF;
 }
 
 /* ーーーーーーーーーーSPメイン部分ここからーーーーーーーーーー */
@@ -102,12 +100,12 @@
     background: #1E1E21;
     border-radius: 41px;
     cursor: pointer;
-    .text {
-      font-size: 19px;
-      text-align: center;
-      line-height: 100%;
-      letter-spacing: -0.4px;
-    }
+  }
+  .o-menu .text {
+    font-size: 19px;
+    text-align: center;
+    line-height: 100%;
+    letter-spacing: -0.4px;
   }
   .open {
     color: #F5F3EF;
@@ -125,12 +123,12 @@
     background: #F5F3EF;
     border-radius: 41px;
     cursor: pointer;
-    .text {
-      font-size: 19px;
-      text-align: center;
-      line-height: 100%;
-      letter-spacing: -0.4px;
-    }
+  }
+  .c-menu .text {
+    font-size: 19px;
+    text-align: center;
+    line-height: 100%;
+    letter-spacing: -0.4px;
   }
   .menu-link {
     position: fixed;
@@ -152,39 +150,38 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    a {
-      width: auto;
-      height: 53px;
-      display: flex;
-      justify-content: center;
-    }
-    a:nth-child(1) {
-      margin: 0px 0 7px;
-    }
-    a:nth-child(2),
-    a:nth-child(3) {
-      margin: 0 0 7px;
-    }
-    .image {
-      width: 29px;
-      height: 29px;
-      margin: 0 6px 0 0;
-      position: relative;
-      img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 15px;
-        height: 15px;
-      }
-    }
-    .page-name {
-      font-size: 53px;
-      line-height: 100%;
-      letter-spacing: -1.6px;
-      color: #F5F3EF;
-    }
   }
-}
+  .menu-page a {
+    width: auto;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+  }
+  .menu-page a:nth-child(1) {
+    margin: 0px 0 7px;
+  }
+  .menu-page a:nth-child(2),
+  .menu-page a:nth-child(3) {
+    margin: 0 0 7px;
+  }
+  .menu-page .image {
+    width: 29px;
+    height: 29px;
+    margin: 0 6px 0 0;
+    position: relative;
+  }
+  .menu-page .image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+  }
+  .menu-page .page-name {
+    font-size: 53px;
+    line-height: 100%;
+    letter-spacing: -1.6px;
+    color: #F5F3EF;
+  }
 /* ーーーーーーーーーーSPメイン部分ここまでーーーーーーーーーー */

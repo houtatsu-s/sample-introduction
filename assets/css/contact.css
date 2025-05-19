@@ -8,13 +8,13 @@
 .contena {
   width: 100%;
   display: flex;
-  .image {
-    width: calc(100% / 2);
-    height: 1200px;
-    img {
-      height: 100%;
-    }
-  }
+}
+.contena .image {
+  width: calc(100% / 2);
+  height: 1200px;
+}
+.contena .image img {
+  height: 100%;
 }
 .inquiry {
   width: calc(100% / 2);
@@ -95,13 +95,13 @@ button {
   .contena {
     width: 100%;
     display: block;
-    .image {
-      width: 100%;
-      height: 500px;
-      img {
-        height: 100%;
-      }
-    }
+  }
+  .contena .image {
+    width: 100%;
+    height: 500px;
+  }
+  .contena .image img {
+    height: 100%;
   }
   .inquiry {
     width: 100%;
@@ -133,7 +133,6 @@ button {
     bottom: 55px;
     left: 0;
     padding: 0 20px 0;
-
   }
   ::placeholder {
     color: #1E1E21;
@@ -206,11 +205,11 @@ button {
   border-radius: 50px;
   padding: 20px 30px;
   width: 138px;
-  a {
-    font-size: 20px;
-    line-height: 110%;
-    color: #1E1E21;
-  }
+}
+.f-button a {
+  font-size: 20px;
+  line-height: 110%;
+  color: #1E1E21;
 }
 .f-box {
   height: calc(750px - (157px + 138px + 286px));
@@ -229,11 +228,11 @@ button {
 .f-l-item {
   width: 111px;
   height: 100%;
-  a {
-    font-size: 24px;
-    line-height: 120%;
-    color: #F5F3EF;
-  }
+}
+.f-l-item a {
+  font-size: 24px;
+  line-height: 120%;
+  color: #F5F3EF;
 }
 /* ーーーーーーーーーーフッター部分ここまでーーーーーーーーーー */
 
@@ -260,14 +259,14 @@ button {
     padding: 11px 16px;
     width: 77px;
     height: 34px;
-    a {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 11px;
-      line-height: 110%;
-    }
+  }
+  .f-button a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 11px;
+    line-height: 110%;
   }
   .f-box {
     height: 239px;
@@ -282,9 +281,9 @@ button {
     text-align: center;
     width: 100%;
     height: 24px;
-    a {
-      font-size: 20px;
-    }
+  }
+  .f-l-item a {
+    font-size: 20px;
   }
 }
 /* ーーーーーーーーーーSPフッター部分ここまでーーーーーーーーーー */
