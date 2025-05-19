@@ -1,6 +1,9 @@
 @charset "utf-8";
 
 /* ーーーーーーーーーーメイン部分ここからーーーーーーーーーー */
+body.no_scroll {
+  overflow: hidden;
+}
 .container {
   position: relative;
   width: 1920px;

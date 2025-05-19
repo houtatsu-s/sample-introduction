@@ -1,5 +1,8 @@
 @charset "utf-8";
 /* ーーーーーーーーーーメイン部分ここからーーーーーーーーーー */
+body.no_scroll {
+  overflow: hidden;
+}
 br {
   display: none;
 }
@@ -123,14 +126,14 @@ br {
   margin: 0 0 16px;
 }
 .ltext {
+  height: 96px;
   font-size: 20px;
   line-height: 160%;
   opacity: .7;
-  overflow: hidden;
+  overflow: scroll;
   display: -webkit-box;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
 }
 .gallery {
   width: 100%;
@@ -289,14 +292,14 @@ br {
     margin: 0 0 10px;
   }
   .ltext {
+    height: 128px;
     font-size: 20px;
     line-height: 160%;
     opacity: .7;
-    overflow: hidden;
-      display: -webkit-box;
-      text-overflow: ellipsis;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 4;
+    overflow: scroll;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
   }
   .gallery {
     width: 100%;

@@ -1,5 +1,8 @@
 @charset "utf-8";
 /* ーーーーーーーーーーメイン部分ここからーーーーーーーーーー */
+body.no_scroll {
+  overflow: hidden;
+}
 .container {
   position: relative;
   width: 1920px;
@@ -53,11 +56,10 @@
   font-size: 24px;
   line-height: 160%;
   margin: 0 0 64px;
-  overflow: hidden;
+  overflow: scroll;
   display: -webkit-box;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
 }
 .content-line {
   border: 1px solid #1E1E21;
@@ -78,11 +80,13 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 160%;
-  overflow: hidden;
-  -webkit-line-clamp: 5;
+  overflow: scroll;
+  display: -webkit-box;
   text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
 }
 /* ーーーーーーーーーーメイン部分ここまでーーーーーーーーーー */
+
 /* ーーーーーーーーーーSPメイン部分ここからーーーーーーーーーー */
 @media screen and (max-width:400px) {
   .container {
@@ -137,11 +141,10 @@
     font-size: 20px;
     line-height: 160%;
     margin: 0 0 40px;
-    overflow: hidden;
+    overflow: scroll;
     display: -webkit-box;
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5;
   }
   .content-line {
     border: 1px solid #1E1E21;
@@ -162,9 +165,10 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 160%;
-    overflow: hidden;
-    -webkit-line-clamp: 5;
+    overflow: scroll;
+    display: -webkit-box;
     text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
   }
 }
 /* ーーーーーーーーーーSPメイン部分ここまでーーーーーーーーーー */

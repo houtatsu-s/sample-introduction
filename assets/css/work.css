@@ -1,5 +1,8 @@
 @charset "utf-8";
 /* ーーーーーーーーーーメイン部分ここからーーーーーーーーーー */
+body.no_scroll {
+  overflow: hidden;
+}
 .container {
   position: relative;
   width: 1920px;
@@ -54,13 +57,13 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 160%;
+  height: 76px;
   opacity: .7;
   margin: 0 0 14px 0;
-  overflow: hidden;
+  overflow: scroll;
   display: -webkit-box;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
 }
 .btn {
   display: flex;
@@ -158,16 +161,16 @@
   }
   .warp-box-text {
     width: 100%;
+    height: 96px;
     font-weight: 400;
     font-size: 20px;
     line-height: 160%;
     opacity: .7;
     margin: 0 0 22px 0;
-    overflow: hidden;
+    overflow: scroll;
     display: -webkit-box;
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
   }
   .btn {
     display: flex;
