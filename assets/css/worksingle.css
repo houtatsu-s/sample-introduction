@@ -318,6 +318,7 @@ br {
     letter-spacing: 0px;
   }
   .gallery-image {
+    display: block;
     width: 30px;
     height: 30px;
     position: relative;
